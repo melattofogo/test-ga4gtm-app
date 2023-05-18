@@ -10,6 +10,19 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Apply styles to the <section> element */
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+
+  /* Center the content horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Apply styles to the <form> element */
 form {
   width: 300px;
@@ -45,12 +58,4 @@ button[type="submit"] {
 /* Apply styles to the <button> element with type "submit" when hovered */
 button[type="submit"]:hover {
   background-color: #307033d3;
-}
-
-/* Additional styles for the <section> element */
-section {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 4px;
 }
