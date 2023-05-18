@@ -10,20 +10,20 @@
 </head>
 <body>
     <h1>Form</h1>
-
-    <form action="/submit" method="POST">
-      <% for(var i=0; i < formInput.length; i++) { %>
-      <div>
-        <label for="<%= formInput[i].for %>"><%= formInput[i].label %>:</label>
-        <% if(formInput[i].tag == 'input') {%>
-        <input type="<%= formInput[i].type %>" id="<%= formInput[i].id %>" name="<%= formInput[i].name %>" <% if(formInput[i].required) { __append('required') } %>>
-        <% } else { %>
-        <textarea id="<%= formInput[i].id %>" name="<%= formInput[i].name %>" rows="<%= formInput[i].rows %>" <% if(formInput[i].required) { __append('required') } %>></textarea>
+    <section>
+      <form action="/submit" method="POST">
+        <% for(var i=0; i < formInput.length; i++) { %>
+        <div>
+          <label for="<%= formInput[i].for %>"><%= formInput[i].label %>:</label>
+          <% if(formInput[i].tag == 'input') {%>
+          <input type="<%= formInput[i].type %>" id="<%= formInput[i].id %>" name="<%= formInput[i].name %>" <% if(formInput[i].required) { __append('required') } %>>
+          <% } else { %>
+          <textarea id="<%= formInput[i].id %>" name="<%= formInput[i].name %>" rows="<%= formInput[i].rows %>" <% if(formInput[i].required) { __append('required') } %>></textarea>
+          <% } %>
+        </div>
         <% } %>
-      </div>
-      <% } %>
-      <button type="submit" name="action" value="send">Submit</button>
-    </form>
-
+        <button type="submit" name="action" value="send">Submit</button>
+      </form>
+  </section>
 </body>
 </html>
