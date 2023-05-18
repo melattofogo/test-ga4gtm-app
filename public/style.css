@@ -60,3 +60,8 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #307033d3;
 }
+
+/* Remove underline from <u> tag */
+u {
+  text-decoration: none;
+}
