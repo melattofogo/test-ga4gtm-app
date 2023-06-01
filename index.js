@@ -70,7 +70,7 @@ app.post('/submit', (req, res) => {
     var keys = Object.keys(formRequest);
     var values = Object.values(formRequest);
 
-    res.render('submit',{keys, values});
+    res.render('submit',{keys, values, gtmid, ga4id});
 });
 
 // Start the server
