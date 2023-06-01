@@ -56,7 +56,7 @@ var formInput = [
 // Define a route for the homepage
 app.get('/', (req, res) => {
 
-    res.render('index', {formInput});
+    res.render('index', {formInput, gtmid, ga4id});
 
 });
 
