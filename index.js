@@ -3,6 +3,7 @@ const { log } = require('console');
 const express = require('express');
 var bodyParser = require('body-parser');
 const path = require('path');
+const { gtmid, ga4id } = require('./config');
 
 const app = express();
 
